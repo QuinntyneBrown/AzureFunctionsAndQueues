@@ -1,0 +1,12 @@
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\bin\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.deps.json
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\bin\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.dll
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\bin\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.pdb
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\bin\Debug\netstandard2.0\AzureFunctionsAndQueues.Core.dll
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\bin\Debug\netstandard2.0\AzureFunctionsAndQueues.Core.pdb
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.csprojAssemblyReference.cache
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.AssemblyInfoInputs.cache
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.AssemblyInfo.cs
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.csproj.CopyComplete
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.dll
+C:\Projects\AzureFunctionsAndQueues\src\AzureFunctionsAndQueues.Domain\obj\Debug\netstandard2.0\AzureFunctionsAndQueues.Domain.pdb
