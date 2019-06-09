@@ -5,8 +5,6 @@ using Microsoft.Azure.Storage.Queue;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AzureFunctionsAndQueues.FunctionsApp
 {
@@ -16,18 +14,11 @@ namespace AzureFunctionsAndQueues.FunctionsApp
 
         public Functions()
         {
-            try
-            {
-                CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-                    Environment.GetEnvironmentVariable("StorageConnectionString"));
-                CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
-                _queue = queueClient.GetQueueReference("Ordered");
-                _queue.CreateIfNotExists();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);                
-            }
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+                Environment.GetEnvironmentVariable("StorageConnectionString"));
+            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+            _queue = queueClient.GetQueueReference("orderedqueue");
+            _queue.CreateIfNotExists();
         }
 
         [FunctionName("Get")]
@@ -35,16 +26,16 @@ namespace AzureFunctionsAndQueues.FunctionsApp
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "get")] HttpRequest req
             )
         {
-            try
-            {
-                CloudQueueMessage message = new CloudQueueMessage("Hello, World");
-                _queue.AddMessage(message);
-                return new OkObjectResult("Ordererd Queue");
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
+            CloudQueueMessage message = new CloudQueueMessage("Hello, World");
+            _queue.AddMessage(message);
+            return new OkObjectResult("Message Submitted!");
+        }
+
+        [FunctionName("ProcessMessage")]
+        public void ProcessMessage(
+            [QueueTrigger("orderedqueue", Connection = "StorageConnectionString")]string message)
+        {
+            Console.WriteLine(message);
         }
     }
 }
